@@ -3,6 +3,27 @@ revision = 3
 requires-python = ">=3.13"
 
 [[package]]
+name = "dji-pilots"
+version = "0.1.0"
+source = { virtual = "." }
+
+[package.dev-dependencies]
+dev = [
+    { name = "pre-commit-hooks" },
+    { name = "prek" },
+    { name = "ruff" },
+]
+
+[package.metadata]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pre-commit-hooks", specifier = "==6.0.0" },
+    { name = "prek", specifier = "==0.4.1" },
+    { name = "ruff", specifier = "==0.15.14" },
+]
+
+[[package]]
 name = "pre-commit-hooks"
 version = "6.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -36,27 +57,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/14/c7/760969d6bfc77e3eba04f6c3801c81076e96a908a6c277c142a4b0f31f4e/prek-0.4.1-py3-none-win32.whl", hash = "sha256:7c515492ef3585e6bcd7b83f1bb1cb131038abc88ed2c843de1e4c3ceb865b19", size = 5208995, upload-time = "2026-05-20T04:27:38.331Z" },
     { url = "https://files.pythonhosted.org/packages/89/12/d43daf290a73dbc3e1a3eabb9077e45df661923949bee045de67cbe82524/prek-0.4.1-py3-none-win_amd64.whl", hash = "sha256:8fa707971465d8ad021c907e43691aad7bb98942943e61e294ece5f95d9fbc78", size = 5591734, upload-time = "2026-05-20T04:27:12.744Z" },
     { url = "https://files.pythonhosted.org/packages/ab/36/2ab7647fe1e84bba2baae7f04de241197eed62683fb3085e164de266d111/prek-0.4.1-py3-none-win_arm64.whl", hash = "sha256:5b4a348537924b20e208cbd87ef58e96ec37d691c5bec2969209c40de0ecf72e", size = 5423147, upload-time = "2026-05-20T04:27:17.023Z" },
-]
-
-[[package]]
-name = "rh-plugin-template"
-version = "0.1.0"
-source = { virtual = "." }
-
-[package.dev-dependencies]
-dev = [
-    { name = "pre-commit-hooks" },
-    { name = "prek" },
-    { name = "ruff" },
-]
-
-[package.metadata]
-
-[package.metadata.requires-dev]
-dev = [
-    { name = "pre-commit-hooks", specifier = "==6.0.0" },
-    { name = "prek", specifier = "==0.4.1" },
-    { name = "ruff", specifier = "==0.15.14" },
 ]
 
 [[package]]
