@@ -8,6 +8,5 @@
     "license_uri": "https://www.apache.org/licenses/LICENSE-2.0",
     "version": "0.1.0",
     "required_rhapi_version": "1.1",
-    "domain": "dji_pilots",
-    "category": ["Utilities"]
+    "domain": "dji_pilots"
 }
